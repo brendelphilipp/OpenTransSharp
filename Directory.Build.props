@@ -1,6 +1,6 @@
 <Project>
   <PropertyGroup>
-    <Version>1.0.5</Version>
+    <Version>1.0.6</Version>
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
@@ -20,15 +20,15 @@
     <PackageLicenseExpression>MPL-2.0</PackageLicenseExpression>
     <Authors>David Rettenbacher</Authors>
     <Company />
-    <Copyright>Copyright © David Rettenbacher 2021-2023</Copyright>
+    <Copyright>Copyright © David Rettenbacher 2021-2026</Copyright>
     <PackageProjectUrl>https://github.com/warappa/OpenTransSharp</PackageProjectUrl>
     <RepositoryUrl>https://github.com/warappa/OpenTransSharp</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>bmecat bmecat-2005 opentrans opentrans-21</PackageTags>
     <PackageReleaseNotes>
-      1.0.5
-      - #19: Quotation document - email deserialization
-      - #21: Fix serialization of DATETIME in CATALOG
+      1.0.6
+      - #24: Issue with .NET 10 - Cannot serialize object of type
+      - .NET 10 support
     </PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <IncludeSymbols>true</IncludeSymbols>
