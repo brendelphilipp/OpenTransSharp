@@ -1,0 +1,1 @@
+dotnet pack -o ../publish --include-symbols ../src/OpenTransSharp.sln
