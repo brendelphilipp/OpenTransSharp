@@ -111,9 +111,10 @@ public class BMEcatSerializationTests
     }
 
     [Test]
+    [NonParallelizable]
     public void Can_deserialize_BMEcat()
     {
-        var stream = File.Open(@"bmecat-sample.xml", FileMode.Open);
+        var stream = File.Open(@"bmecat-sample.xml", FileMode.Open, FileAccess.Read, FileShare.Read);
 
         var document = target.Deserialize<BMEcatDocument>(stream);
 
@@ -130,9 +131,10 @@ public class BMEcatSerializationTests
     }
 
     [Test]
+    [NonParallelizable]
     public void Can_deserialize_BMEcat_with_multiple_catalog_languages()
     {
-        var stream = File.Open(@"bmecat-sample.xml", FileMode.Open);
+        var stream = File.Open(@"bmecat-sample.xml", FileMode.Open, FileAccess.Read, FileShare.Read);
 
         var document = target.Deserialize<BMEcatDocument>(stream);
 
@@ -165,9 +167,10 @@ public class BMEcatSerializationTests
     }
 
     [Test]
+    [NonParallelizable]
     public void Ticket14_Can_use_multiple_emails_in_party_contact_data()
     {
-        var stream = File.Open(@"bmecat-sample.xml", FileMode.Open);
+        var stream = File.Open(@"bmecat-sample.xml", FileMode.Open, FileAccess.Read, FileShare.Read);
 
         var order = target.Deserialize<BMEcatDocument>(stream);
 
@@ -191,9 +194,10 @@ public class BMEcatSerializationTests
     }
 
     [Test]
+    [NonParallelizable]
     public void Ticket14_Can_use_multiple_emails_in_buyer_data()
     {
-        var stream = File.Open(@"bmecat-sample.xml", FileMode.Open);
+        var stream = File.Open(@"bmecat-sample.xml", FileMode.Open, FileAccess.Read, FileShare.Read);
 
         var order = target.Deserialize<BMEcatDocument>(stream);
 
@@ -217,9 +221,10 @@ public class BMEcatSerializationTests
     }
 
     [Test]
+    [NonParallelizable]
     public void Ticket14_Can_use_multiple_emails_in_supplier_data()
     {
-        var stream = File.Open(@"bmecat-sample.xml", FileMode.Open);
+        var stream = File.Open(@"bmecat-sample.xml", FileMode.Open, FileAccess.Read, FileShare.Read);
 
         var order = target.Deserialize<BMEcatDocument>(stream);
 

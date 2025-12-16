@@ -45,21 +45,6 @@ public class DeliveryIdRef : global::BMEcatSharp.PartyIdRefBase<DeliveryIdRef>
         Type = type;
     }
 
-    /// <summary>
-    /// (optional) This attribute is used to state the coding standard to which the identifier (PARTY_ID) adheres.<br/>
-    /// The most common coding standards are predefined - see <see cref="BMEcatSharp.PartyTypeValues"/>. Custom values can also be used.<br/>
-    /// </summary>
-    [XmlAttribute("type")]
-    public override string? Type { get; set; }
-
-    /// <summary>
-    /// (required)<br/>
-    /// <br/>
-    /// Max length: 250
-    /// </summary>
-    [XmlText]
-    public override string Value { get; set; }
-
     public static explicit operator global::BMEcatSharp.PartyId(DeliveryIdRef idRef)
     {
         if (idRef is null)

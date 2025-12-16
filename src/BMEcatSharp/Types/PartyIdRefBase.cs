@@ -27,10 +27,10 @@ public abstract class PartyIdRefBase<TConcrete>
 
 
     [XmlAttribute("type")]
-    public virtual string? Type { get; set; }
+    public string? Type { get; set; }
 
     [XmlText]
-    public virtual string Value { get; set; }
+    public string Value { get; set; }
 
     public static explicit operator PartyIdRefBase<TConcrete>(TConcrete from)
     {

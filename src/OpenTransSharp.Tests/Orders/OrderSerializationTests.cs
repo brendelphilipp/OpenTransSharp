@@ -78,7 +78,7 @@ public class OrderSerializationTests
     [Test]
     public void Can_deserialize_sample_order()
     {
-        var stream = File.Open(@"Orders\sample_order_opentrans_2_1_xml signature.xml", FileMode.Open);
+        var stream = File.Open(@"Orders\sample_order_opentrans_2_1_xml signature.xml", FileMode.Open, FileAccess.Read, FileShare.Read);
 
         var order = target.Deserialize<Order>(stream);
 
@@ -122,7 +122,7 @@ public class OrderSerializationTests
     [Test]
     public void Ticket14_Can_use_multiple_emails_in_address_data()
     {
-        var stream = File.Open(@"Orders\sample_order_opentrans_2_1_xml signature.xml", FileMode.Open);
+        var stream = File.Open(@"Orders\sample_order_opentrans_2_1_xml signature.xml", FileMode.Open, FileAccess.Read, FileShare.Read);
 
         var order = target.Deserialize<Order>(stream);
 
