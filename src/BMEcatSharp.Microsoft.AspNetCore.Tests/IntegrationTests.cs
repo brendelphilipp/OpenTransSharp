@@ -13,6 +13,7 @@ public class IntegrationTests
     }
 
     [Test]
+    [NonParallelizable]
     public async Task Can_parse_valid_BMEcatDocument_via_stream()
     {
         using var stream = File.OpenRead("bmecat-sample.xml");
@@ -25,6 +26,7 @@ public class IntegrationTests
     }
 
     [Test]
+    [NonParallelizable]
     public async Task Cannot_parse_invalid_BMEcatDocument_via_stream()
     {
         using var stream = File.OpenRead("bmecat-sample-invalid.xml");
@@ -40,6 +42,7 @@ public class IntegrationTests
     }
 
     [Test]
+    [NonParallelizable]
     public async Task Can_parse_valid_BMEcatDocument_via_model_binding()
     {
         using var stream = File.OpenRead("bmecat-sample.xml");
@@ -67,6 +70,7 @@ public class IntegrationTests
     }
 
     [Test]
+    [NonParallelizable]
     public async Task Can_parse_valid_BMEcatDocument_via_file()
     {
         using var stream = File.OpenRead("bmecat-sample.xml");
