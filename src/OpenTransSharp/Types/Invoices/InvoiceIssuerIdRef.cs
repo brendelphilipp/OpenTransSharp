@@ -45,25 +45,6 @@ public class InvoiceIssuerIdRef : global::BMEcatSharp.PartyIdRefBase<InvoiceIssu
         Type = type;
     }
 
-    /// <summary>
-    /// (optional) Coding standard<br/>
-    /// <br/>
-    /// This attribute is used to state the coding standard to which the identifier (PARTY_ID) adheres.<br/>
-    /// The most common coding standards are predefined.<br/>
-    /// <br/>
-    /// See <see cref="BMEcatSharp.PartyTypeValues"/>.
-    /// </summary>
-    [XmlAttribute("type")]
-    public override string? Type { get; set; }
-
-    /// <summary>
-    /// (required)<br/>
-    /// <br/>
-    /// Max length: 250
-    /// </summary>
-    [XmlText]
-    public override string Value { get; set; }
-
     public static explicit operator global::BMEcatSharp.PartyId(InvoiceIssuerIdRef idRef)
     {
         if (idRef is null)
