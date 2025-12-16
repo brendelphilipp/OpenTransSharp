@@ -75,8 +75,6 @@ public class Startup
             app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "BMEcatSharp.Samples.AspNetCore v1"));
         }
 
-        app.UseHttpsRedirection();
-
         app.UseRouting();
 
         app.UseAuthorization();
