@@ -332,7 +332,7 @@ var serializerFactory = new OpenTransXmlSerializerFactory(options);
 
 #### Prerequisites
 
-* Ensure you have **.NET SDK 8.0+** installed (see https://dot.net)
+* Ensure you have **.NET SDK 10.0+** installed (see https://dot.net)
 
 * Checkout this repository to your computer
 
@@ -382,7 +382,7 @@ https://de.wikipedia.org/wiki/BMEcat
 
 ### Licenses
 
-**Copyright 2021-2023 David Rettenbacher**
+**Copyright 2021-2026 David Rettenbacher**
 
 The license of this project is **MPL 2.0**. If not stated otherwise in individual files, this license applies to all files of this project. 
 
