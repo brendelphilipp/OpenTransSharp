@@ -60,7 +60,7 @@ public class InvoiceListSerializationTests
     [Test]
     public void Can_deserialize_sample_InvoiceList()
     {
-        var stream = File.Open(@"InvoiceLists\sample_invoicelist_credit_card_statement_opentrans_2_1.xml", FileMode.Open);
+        var stream = File.Open(@"InvoiceLists\sample_invoicelist_credit_card_statement_opentrans_2_1.xml", FileMode.Open, FileAccess.Read, FileShare.Read);
 
         var invoiceList = target.Deserialize<InvoiceList>(stream);
 

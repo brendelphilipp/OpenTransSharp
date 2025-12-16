@@ -60,7 +60,7 @@ public class InvoiceSerializationTests
     [Test]
     public void Can_deserialize_sample_Invoice()
     {
-        var stream = File.Open(@"Invoices\sample_invoice_opentrans_2_1.xml", FileMode.Open);
+        var stream = File.Open(@"Invoices\sample_invoice_opentrans_2_1.xml", FileMode.Open, FileAccess.Read, FileShare.Read);
 
         var invoice = target.Deserialize<Invoice>(stream);
 
@@ -70,7 +70,7 @@ public class InvoiceSerializationTests
     [Test]
     public void Can_deserialize_sample_Invoice2()
     {
-        var stream = File.Open(@"Invoices\sample_invoice_opentrans_2_1_xml signature.xml", FileMode.Open);
+        var stream = File.Open(@"Invoices\sample_invoice_opentrans_2_1_xml signature.xml", FileMode.Open, FileAccess.Read, FileShare.Read);
 
         var invoice = target.Deserialize<Invoice>(stream);
 

@@ -61,7 +61,7 @@ public class DispatchNotificationSerializationTests
     [Test]
     public void Can_deserialize_sample_DispatchNotification()
     {
-        var stream = File.Open(@"DispatchNotifications\sample_dispatchnotification_opentrans_2_1.xml", FileMode.Open);
+        var stream = File.Open(@"DispatchNotifications\sample_dispatchnotification_opentrans_2_1.xml", FileMode.Open, FileAccess.Read, FileShare.Read);
 
         var dispatchNotification = target.Deserialize<DispatchNotification>(stream);
 
